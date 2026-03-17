@@ -1,0 +1,309 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(120deg, hsl(240deg 49% 9%) 0%, hsl(245deg 47% 10%) 5%, hsl(250deg 49% 12%) 12%, hsl(254deg 48% 13%) 26%, hsl(258deg 46% 14%) 75%, hsl(264deg 45% 15%) 90%, hsl(268deg 47% 16%) 96%, hsl(274deg 46% 17%) 99%, hsl(278deg 45% 19%) 100%, hsl(283deg 45% 20%) 100%, hsl(287deg 44% 21%) 100%);
+}
+
+.azul {
+    color: #00ffff;
+}
+
+.cabecalho {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #00ffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #00ffff;
+}
+
+.botao-login {
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    padding: 8px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao-login:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #0C0C23;
+}
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    padding: 8px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #0C0C23;
+}
+
+.hero {
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-texto {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-texto h1,
+.hero-texto h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-texto p {
+    width: 60%;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.hero-imagem {
+    width: 50%;
+    height:475px;
+    background-color: hsla(287, 44%, 21%, 0.418);
+    border-radius: 80px 0 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-imagem img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    border-radius: 0 0 80px 80px;
+}
+
+.hero-imagem img:hover {
+    transform: scale(1.05);
+}
+
+
+.mais-baixadas {
+    width: 90%;
+    margin: 80px auto 60px auto;
+}
+
+.mais-baixadas h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.lista-artistas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartao-artista {
+    width: 30%;
+    text-align: center;
+}
+
+.cartao-artista img {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 80px 0;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.cartao-artista img:hover {
+    transform: scale(1.05);
+}
+
+.cartao-artista h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.rodape {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.colunas-rodape {
+    display: flex;
+    gap: 80px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.coluna a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.coluna a:hover {
+    color: #00ffff;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.redes-sociais a {
+    color: #00ffff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.redes-sociais a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        width: 100%;
+        padding: 10px 2px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+    }
+
+    .logo {
+        font-size: 14px;
+        gap: 4px;
+        flex-shrink: 0;
+    }
+
+    .logo i {
+        font-size: 14px;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .menu a, .menu button {
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero-imagem {
+        width: 90%;
+        height: 90%;
+        order: -1;
+    }
+
+    .hero-imagem img{
+        height: 90%;
+        border-radius: 0 0 55px 0;
+        width: 90%;                    
+        order: -1;
+    }
+
+    .hero-texto {
+        width: 100%;
+    }
+
+    .hero-texto h1, h2, span, h3{
+       font-size: 25px;
+    }
+
+
+    .hero-texto p {
+        width: 100%;
+    }
+
+    .lista-artistas {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .cartao-artista {
+        width: 80%;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        text-align: center;
+    }
+
+    .colunas-rodape {
+        width: 100%;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .coluna {
+        width: 33%;
+        align-items: center;
+    }
+}
